@@ -122,25 +122,14 @@
           
           
 
-          <td rowspan=29>Cryptographic Asset Management</td>
+          <td rowspan=29>加密资产管理</td>
         
 
-        <td rowspan=4>Key / Seed Generation</td>
+        <td rowspan=4>秘钥/种子生成</td>
 
         
           
-          <td>Operator-created Key / Seed</td>
-
-          <td></td>
-          <td></td>
-          <td></td>
-          </tr>
-          
-        
-          
-            <tr>
-          
-          <td>Creation methodology is validated</td>
+          <td>操作者创建秘钥/种子</td>
 
           <td></td>
           <td></td>
@@ -151,7 +140,7 @@
           
             <tr>
           
-          <td>DRBG Compliance</td>
+          <td>创建方法已通过验证</td>
 
           <td></td>
           <td></td>
@@ -162,7 +151,18 @@
           
             <tr>
           
-          <td>Entropy Pool</td>
+          <td>符合伪随机数生产器(DRBG)</td>
+
+          <td></td>
+          <td></td>
+          <td></td>
+          </tr>
+          
+        
+          
+            <tr>
+          
+          <td>熵池</td>
 
           <td></td>
           <td></td>
@@ -179,22 +179,11 @@
 
         
 
-        <td rowspan=6>Wallet Creation</td>
+        <td rowspan=6>创建钱包</td>
 
         
           
-          <td>Unique address per transaction</td>
-
-          <td></td>
-          <td></td>
-          <td></td>
-          </tr>
-          
-        
-          
-            <tr>
-          
-          <td>Multiple keys for signing</td>
+          <td>每笔交易的唯一地址</td>
 
           <td></td>
           <td></td>
@@ -205,7 +194,7 @@
           
             <tr>
           
-          <td>Redundant key for recovery</td>
+          <td>用于签名的多个秘钥</td>
 
           <td></td>
           <td></td>
@@ -216,7 +205,7 @@
           
             <tr>
           
-          <td>Deterministic wallets</td>
+          <td>用于恢复的冗余秘钥</td>
 
           <td></td>
           <td></td>
@@ -227,7 +216,7 @@
           
             <tr>
           
-          <td>Geographic distribution of keys</td>
+          <td>确定性钱包</td>
 
           <td></td>
           <td></td>
@@ -238,7 +227,18 @@
           
             <tr>
           
-          <td>Organizational distribution of keys</td>
+          <td>秘钥的地理分布</td>
+
+          <td></td>
+          <td></td>
+          <td></td>
+          </tr>
+          
+        
+          
+            <tr>
+          
+          <td>秘钥的组织分布</td>
 
           <td></td>
           <td></td>
@@ -255,22 +255,11 @@
 
         
 
-        <td rowspan=6>Key Storage</td>
+        <td rowspan=6>秘钥存储</td>
 
         
           
-          <td>Primary keys are stored encrypted</td>
-
-          <td></td>
-          <td></td>
-          <td></td>
-          </tr>
-          
-        
-          
-            <tr>
-          
-          <td>Backup key exists</td>
+          <td>主秘钥加密存储</td>
 
           <td></td>
           <td></td>
@@ -281,7 +270,7 @@
           
             <tr>
           
-          <td>Backup key has environmental protection</td>
+          <td>存在备份秘钥</td>
 
           <td></td>
           <td></td>
@@ -292,7 +281,7 @@
           
             <tr>
           
-          <td>Backup key is access-controlled</td>
+          <td>备份秘钥具备环境保护机制</td>
 
           <td></td>
           <td></td>
@@ -303,7 +292,7 @@
           
             <tr>
           
-          <td>Backup key has tamper-evident seal</td>
+          <td>备份秘钥受控访问</td>
 
           <td></td>
           <td></td>
@@ -314,7 +303,18 @@
           
             <tr>
           
-          <td>Backup key is encrypted</td>
+          <td>备份秘钥具有防篡改印章</td>
+
+          <td></td>
+          <td></td>
+          <td></td>
+          </tr>
+          
+        
+          
+            <tr>
+          
+          <td>加密备份秘钥</td>
 
           <td></td>
           <td></td>
@@ -331,22 +331,11 @@
 
         
 
-        <td rowspan=8>Key Usage</td>
+        <td rowspan=8>秘钥使用</td>
 
         
           
-          <td>Key access requires user/pass/nth factor</td>
-
-          <td></td>
-          <td></td>
-          <td></td>
-          </tr>
-          
-        
-          
-            <tr>
-          
-          <td>Keys are only used in a trusted environment</td>
+          <td>访问密钥需要用户/密码/第n个因素</td>
 
           <td></td>
           <td></td>
@@ -357,7 +346,7 @@
           
             <tr>
           
-          <td>Operator reference checks</td>
+          <td>只在可信环境中使用密钥</td>
 
           <td></td>
           <td></td>
@@ -368,7 +357,18 @@
           
             <tr>
           
-          <td>Operator ID checks</td>
+          <td>操作员参考检查</td>
+
+          <td></td>
+          <td></td>
+          <td></td>
+          </tr>
+          
+        
+          
+            <tr>
+          
+          <td>操作员ID检查</td>
 
           <td></td>
           <td></td>
@@ -390,7 +390,7 @@
           
             <tr>
           
-          <td>Spends are verified before signing</td>
+          <td>操作员背景调查</td>
 
           <td></td>
           <td></td>
@@ -401,7 +401,7 @@
           
             <tr>
           
-          <td>No two keys are used on one device</td>
+          <td>不能在一台设备上使用两个秘钥</td>
 
           <td></td>
           <td></td>
@@ -412,7 +412,7 @@
           
             <tr>
           
-          <td>DRBG Compliance</td>
+          <td>符合伪随机数生产器</td>
 
           <td></td>
           <td></td>
@@ -429,11 +429,11 @@
 
         
 
-        <td rowspan=2>Key Compromise Protocol (KCP)</td>
+        <td rowspan=2>秘钥协商机制(KCP)</td>
 
         
           
-          <td>KCP Exists</td>
+          <td>存在秘钥协商机制(KCP)</td>
 
           <td></td>
           <td></td>
@@ -444,7 +444,7 @@
           
             <tr>
           
-          <td>KCP Training + Rehearsals</td>
+          <td>KCP培训与演练</td>
 
           <td></td>
           <td></td>
@@ -461,22 +461,11 @@
 
         
 
-        <td rowspan=3>Keyholder Grant/Revoke Policies & Procedures</td>
+        <td rowspan=3>密钥持有人授予/撤销政策和程序</td>
 
         
           
-          <td>Grant/Revoke Procedures/Checklist</td>
-
-          <td></td>
-          <td></td>
-          <td></td>
-          </tr>
-          
-        
-          
-            <tr>
-          
-          <td>Requests made via Authenticated Communication Channel</td>
+          <td>授予/撤销程序/清单</td>
 
           <td></td>
           <td></td>
@@ -487,7 +476,18 @@
           
             <tr>
           
-          <td>Grant/Revoke Audit Trail</td>
+          <td>通过经过身份验证的通信信道发出的请求</td>
+
+          <td></td>
+          <td></td>
+          <td></td>
+          </tr>
+          
+        
+          
+            <tr>
+          
+          <td>授予/撤消审计跟踪</td>
 
           <td></td>
           <td></td>
@@ -506,14 +506,14 @@
           
           
 
-          <td rowspan=6>Operations</td>
+          <td rowspan=6>运营</td>
         
 
-        <td rowspan=1>Security Audits / Pentests</td>
+        <td rowspan=1>安全审计/渗透测试</td>
 
         
           
-          <td>Security Audit</td>
+          <td>安全审计</td>
 
           <td></td>
           <td></td>
@@ -530,11 +530,11 @@
 
         
 
-        <td rowspan=2>Data Sanitization Policy (DSP)</td>
+        <td rowspan=2> 数据清理策略(DSP)</td>
 
         
           
-          <td>DSP Exists</td>
+          <td>存在数据清理策略</td>
 
           <td></td>
           <td></td>
@@ -545,7 +545,7 @@
           
             <tr>
           
-          <td>Audit Trail of all media sanitization</td>
+          <td>审计跟踪所有介质清理</td>
 
           <td></td>
           <td></td>
@@ -562,11 +562,11 @@
 
         
 
-        <td rowspan=1>Proof of Reserve (PoR)</td>
+        <td rowspan=1>储备证明(PoR)</td>
 
         
           
-          <td>Proof of Reserve Audits</td>
+          <td>储备证明审计</td>
 
           <td></td>
           <td></td>
@@ -583,11 +583,11 @@
 
         
 
-        <td rowspan=2>Audit Logs</td>
+        <td rowspan=2>审计日志</td>
 
         
           
-          <td>Application Audit Logs</td>
+          <td>应用审计日志</td>
 
           <td></td>
           <td></td>
@@ -598,7 +598,7 @@
           
             <tr>
           
-          <td>Backup of Audit Logs</td>
+          <td>审计日志备份</td>
 
           <td></td>
           <td></td>
