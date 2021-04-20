@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -105,10 +104,10 @@
     </colgroup>
     <thead>
       <tr>
-        <th id='header_category'>Category</th>
-        <th id='header_aspect'>Aspect</th>
-        <th id='header_component'>Component</th>
-        <th id='header_uncertifiable'>Uncertified</th>
+        <th id='header_category'>分类</th>
+        <th id='header_aspect'>方面</th>
+        <th id='header_component'>组件</th>
+        <th id='header_uncertifiable'>不予认证</th>
         <th id='header_level_i'><img src="/CCSS/images/CCSS_1_Color_Dark.png" alt="Level I" width="250"/></th>
         <th id='header_level_ii'><img src="/CCSS/images/CCSS_2_Color_Dark.png" alt="Level II" width="250"/></th>
         <th id='header_level_iii'><img src="/CCSS/images/CCSS_3_Color_Dark.png" alt="Level III" width="250"/></th>
@@ -124,41 +123,41 @@
             
             
 
-            <td rowspan=29>Cryptographic Asset Management</li>
+            <td rowspan=29>加密资产管理</li>
 
           
 
-          <td rowspan=4>Key / Seed Generation</td>
+          <td rowspan=4>秘钥/种子生成</td>
 
           
             
-            <td>Operator-created Key / Seed</td>
-            <td>Keys/seeds are issued to the keyholder by another actor</td>
-            <td>Keys/seeds are created by the key/seed operator themselves</td>
-            <td>Keys/seeds are created by the key/seed operator themselves</td>
-            <td>Keys/seeds are created by the key/seed operator themselves</td>
+            <td>运营者创建秘钥/种子</td>
+            <td>秘钥/种子由另外一个秘钥持有者颁发</td>
+            <td>秘钥/种子由秘钥/种子操作员自己创建</td>
+            <td>秘钥/种子由秘钥/种子操作员自己创建</td>
+            <td>秘钥/种子由秘钥/种子操作员自己创建</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Creation methodology is validated</td>
+            <td>创建方法已通过验证</td>
             <td></td>
             <td></td>
-            <td>Key/seed creation methodology is validated prior to use</td>
-            <td>Key/seed creation methodology is validated prior to use</td>
+            <td>秘钥/种子创建方法在使用前经过验证</td>
+            <td>秘钥/种子创建方法在使用前经过验证</td>
             </tr>
             
           
             
               <tr>
             
-            <td>DRBG Compliance</td>
-            <td>Keys / seeds are created with a non-compliant DRBG</td>
-            <td>Key/seed is created using a NIST SP 800-90A compliant DRBG</td>
-            <td>Key/seed is created using a NIST SP 800-90A compliant DRBG that has been seeded with a single cryptographically-secure sources of entropy</td>
-            <td>Key/seed is created using a NIST SP 800-90A compliant DRBG that has been seeded with multiple cryptographically-secure sources of entropy
+            <td>符合伪随机数生产器(DRBG)</td>
+            <td>秘钥/种子由不符合要求的DRBG生成</td>
+            <td>密钥/种子是使用符合NIST SP 800-90A 的DRBG创建的 </td>
+            <td>密钥/种子是使用符合NIST SP 800-90A 的DRBG创建的，该DRBG播种了单个加密安全的熵源</td>
+            <td>密钥/种子是使用符合NIST SP 800-90A 的DRBG创建的，该DRBG播种了多种加密安全的熵源，或通过了行业标准统计测试（DIEHARD，Crypt-X，NIST STS）的NRBG
 OR
 A NRBG that passes industry-standard statistical tests (DIEHARD, Crypt-X, NIST STS)
 </td>
@@ -168,11 +167,11 @@ A NRBG that passes industry-standard statistical tests (DIEHARD, Crypt-X, NIST S
             
               <tr>
             
-            <td>Entropy Pool</td>
-            <td>Keys / seeds are created on system with insufficient entropy</td>
-            <td>Key/seed is created on a system with sufficient entropy</td>
-            <td>Key/seed is created on a system with sufficient entropy</td>
-            <td>Key/seed is created on a system with sufficient entropy</td>
+            <td>熵池</td>
+            <td>秘钥/种子由熵不足的系统上生成</td>
+            <td>密钥/种子是在具有足够熵的系统上创建的</td>
+            <td>密钥/种子是在具有足够熵的系统上创建的</td>
+            <td>密钥/种子是在具有足够熵的系统上创建的</td>
             </tr>
             
           
@@ -185,146 +184,70 @@ A NRBG that passes industry-standard statistical tests (DIEHARD, Crypt-X, NIST S
 
           
 
-          <td rowspan=6>Wallet Creation</td>
+          <td rowspan=6>构建钱包</td>
 
           
             
-            <td>Unique address per transaction</td>
+            <td>为每个交易形成唯一地址</td>
             <td></td>
             <td></td>
             <td></td>
-            <td>Unique addresses are generated for every transaction</td>
+            <td>每笔交易都会生成唯一的地址</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Multiple keys for signing</td>
+            <td>多个用于签名的秘钥</td>
             <td></td>
             <td></td>
-            <td>Transactions require signatures from 2 or more keys</td>
-            <td>Transactions require signatures from 2 or more keys</td>
+            <td>交易需要来自2个或更多密钥的签名</td>
+            <td>交易需要来自2个或更多密钥的签名</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Redundant key for recovery</td>
+            <td>用于灾备的冗余秘钥</td>
             <td></td>
             <td></td>
-            <td>Redundant keys are assigned for recovery purposes (i.e. 2of3, 3of5, etc.)</td>
-            <td>Redundant keys are assigned for recovery purposes (i.e. 2of3, 3of5, etc.)</td>
+            <td>分配了冗余密钥以进行恢复（例如2of3、3of5等）</td>
+            <td>分配了冗余密钥以进行恢复（例如2of3、3of5等）</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Deterministic wallets</td>
+            <td>确定性钱包</td>
             <td></td>
             <td></td>
-            <td>Addresses are assigned deterministically</td>
-            <td>Addresses are assigned deterministically</td>
+            <td>地址是确定性分配的</td>
+            <td>地址是确定性分配的</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Geographic distribution of keys</td>
+            <td>按地理分布的秘钥</td>
             <td></td>
             <td></td>
-            <td>Keys are distributed across multiple separate locations</td>
-            <td>Keys are distributed across multiple separate locations</td>
+            <td>密钥分布在多个不同的位置</td>
+            <td>密钥分布在多个不同的位置</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Organizational distribution of keys</td>
+            <td>按组织分布的秘钥</td>
             <td></td>
             <td></td>
             <td></td>
-            <td>Keys are distributed across multiple organizational entities</td>
-            </tr>
-            
-          
-
-        </tr>
-      
-        
-        <tr>
-          
-
-          
-
-          <td rowspan=6>Key Storage</td>
-
-          
-            
-            <td>Primary keys are stored encrypted</td>
-            <td>Keys/seeds are stored in plain text</td>
-            <td>Key/seed is stored with strong encryption</td>
-            <td>Key/seed is stored with strong encryption</td>
-            <td>Key/seed is stored with strong encryption</td>
-            </tr>
-            
-          
-            
-              <tr>
-            
-            <td>Backup key exists</td>
-            <td>No key backups exist</td>
-            <td>Key/seed backup exists</td>
-            <td>Key/seed backup is stored in a separate location from primary key/seed</td>
-            <td>Key/seed backup is stored in a separate location from primary key/seed</td>
-            </tr>
-            
-          
-            
-              <tr>
-            
-            <td>Backup key has environmental protection</td>
-            <td></td>
-            <td>Key/seed backup is protected from environmental damage</td>
-            <td>Key/seed backup is protected from environmental damage</td>
-            <td>Key/seed backup is protected from environmental damage including electromagnetic pulse</td>
-            </tr>
-            
-          
-            
-              <tr>
-            
-            <td>Backup key is access-controlled</td>
-            <td></td>
-            <td>Key/seed backup is protected by access controls to prevent unauthorized access (i.e. safe/safe deposit box)</td>
-            <td>Key/seed backup is protected by access controls to prevent unauthorized access (i.e. safe/safe deposit box)</td>
-            <td>Key/seed backup is protected by access controls to prevent unauthorized access (i.e. safe/safe deposit box)</td>
-            </tr>
-            
-          
-            
-              <tr>
-            
-            <td>Backup key has tamper-evident seal</td>
-            <td></td>
-            <td></td>
-            <td>Key/seed backup employs tamper-evident seal</td>
-            <td>Key/seed backup employs tamper-evident seal</td>
-            </tr>
-            
-          
-            
-              <tr>
-            
-            <td>Backup key is encrypted</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Key/seed backup is stored with strong encryption equal/better than that used to protect primary key</td>
+            <td>密钥分布在多个组织实体中</td>
             </tr>
             
           
@@ -337,252 +260,170 @@ A NRBG that passes industry-standard statistical tests (DIEHARD, Crypt-X, NIST S
 
           
 
-          <td rowspan=8>Key Usage</td>
+          <td rowspan=6>秘钥存储</td>
 
           
             
-            <td>Key access requires user/pass/nth factor</td>
-            <td>Access to key/seed does not require sufficient factors of authentication to provide adequate security</td>
-            <td>Access to key/seed requires an identifier and at least 2 other factors (password, MFA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)</td>
-            <td>Access to key/seed requires an identifier and at least 2 other factor (password, MFA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)</td>
-            <td>Access to key/seed requires an identifier and at least 3 other factors (password, MFA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)</td>
+            <td>主秘钥加密存储</td>
+            <td>秘钥/种子明文存储</td>
+            <td>密钥/种子以高度加密方式存储</td>
+            <td>密钥/种子以高度加密方式存储</td>
+            <td>密钥/种子以高度加密方式存储</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Keys are only used in a trusted environment</td>
-            <td>Keys/seeds are used on public/untrusted machines, or in environments where passwords/secrets can be disclosed</td>
-            <td>Keys/seeds are only used in trusted environments</td>
-            <td>Keys/seeds are only used in trusted environments</td>
-            <td>Keys/seeds are only used in trusted environments</td>
+            <td>存在备份秘钥</td>
+            <td>没有备份秘钥</td>
+            <td>存在密钥/种子备份</td>
+            <td>密钥/种子备份存储在与主密钥/种子不同的位置</td>
+            <td>密钥/种子备份存储在与主密钥/种子不同的位置</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Operator reference checks</td>
-            <td>No checks are performed on key/seed holders</td>
-            <td>Key/seed holders have references checked</td>
-            <td>Key/seed holders have references checked</td>
-            <td>Key/seed holders have references checked</td>
+            <td>备份秘钥具有环境保护功能</td>
+            <td></td>
+            <td>密钥/种子备份受到保护，免受环境破坏</td>
+            <td>密钥/种子备份受到保护，免受环境破坏</td>
+            <td>密钥/种子备份受到保护，免受电磁脉冲等环境破坏</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Operator ID checks</td>
-            <td>ID of one or more operators is not established</td>
-            <td>Key/seed holders have identify verified</td>
-            <td>Key/seed holders have identify verified</td>
-            <td>Key/seed holders have identify verified</td>
+            <td>备份秘钥是访问控制的</td>
+            <td></td>
+            <td>密钥/种子备份受到访问控制的保护，以防止未经授权的访问（即保险箱/保管箱）</td>
+            <td>密钥/种子备份受到访问控制的保护，以防止未经授权的访问（即保险箱/保管箱）</td>
+            <td>密钥/种子备份受到访问控制的保护，以防止未经授权的访问（即保险箱/保管箱）</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Operator background checks</td>
+            <td>备份秘钥具有防篡改印章</td>
+            <td></td>
+            <td></td>
+            <td>密钥/种子备份采用防篡改密封</td>
+            <td>密钥/种子备份采用防篡改密封</td>
+            </tr>
+            
+          
+            
+              <tr>
+            
+            <td>备份秘钥是加密的</td>
             <td></td>
             <td></td>
             <td></td>
-            <td>Key/seed holders have undergone background checks</td>
+            <td>密钥/种子备份存储的加密强度等于/优于用于保护主密钥的加密/种子备份</td>
+            </tr>
+            
+          
+
+        </tr>
+      
+        
+        <tr>
+          
+
+          
+
+          <td rowspan=8>秘钥使用</td>
+
+          
+            
+            <td>秘钥访问需要用户、密码和其他因素</td>
+            <td>访问秘钥/种子不需要提供足够的认证因素及安全性</td>
+            <td>要访问密钥/种子，需要一个标识符和至少两个其他因素（密码，MFA令牌，由保卫人员进行的亲自验证，IP地址白名单，用于访问安全存储的物理密钥，加签组织）</td>
+            <td>要访问密钥/种子，需要一个标识符和至少两个其他因素（密码，MFA令牌，由保卫人员进行的亲自验证，IP地址白名单，用于访问安全存储的物理密钥，加签组织）</td>
+            <td>要访问密钥/种子，需要一个标识符和至少3个其他因素（密码，MFA令牌，由保安人员进行的亲自验证，IP地址白名单，用于访问安全存储的物理密钥，加签组织）</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Spends are verified before signing</td>
+            <td>秘钥只在可信的环境下使用</td>
+            <td>密钥/种子在公共/不受信任的机器上使用，或者在可以泄露密码/秘密的环境中使用</td>
+            <td>密钥/种子仅在受信任的环境中使用</td>
+            <td>密钥/种子仅在受信任的环境中使用</td>
+            <td>密钥/种子仅在受信任的环境中使用</td>
+            </tr>
+            
+          
+            
+              <tr>
+            
+            <td>操作员参考检查</td>
+            <td>不对秘钥/种子持有人进行检查</td>
+            <td>秘钥/种子持有人的参考经过核对</td>
+            <td>秘钥/种子持有人的参考经过核对</td>
+            <td>秘钥/种子持有人的参考经过核对</td>
+            </tr>
+            
+          
+            
+              <tr>
+            
+            <td>操作员ID检查</td>
+            <td>不对一个或者多个操作员的ID进行检查</td>
+            <td>秘钥/种子持有人已通过身份验证</td>
+            <td>秘钥/种子持有人已通过身份验证</td>
+            <td>秘钥/种子持有人已通过身份验证</td>
+            </tr>
+            
+          
+            
+              <tr>
+            
+            <td>操作员背景调查</td>
             <td></td>
             <td></td>
-            <td>Verification of fund destinations and amounts are performed prior to key usage</td>
-            <td>Verification of fund destinations and amounts are performed prior to key usage</td>
+            <td></td>
+            <td>秘钥/种子持有人已经接受了背景调查</td>
             </tr>
             
           
             
               <tr>
             
-            <td>No two keys are used on one device</td>
-            <td>Multiple keys for a single asset used on one device</td>
-            <td>No two keys belonging to the same wallet are present on any one device</td>
-            <td>No two keys belonging to the same wallet are present on any one device</td>
-            <td>No two keys belonging to the same wallet are present on any one device</td>
+            <td>签收前先验证支出</td>
+            <td></td>
+            <td></td>
+            <td>在密钥使用之前验证资金目的地和金额</td>
+            <td>在密钥使用之前验证资金目的地和金额</td>
             </tr>
             
           
             
               <tr>
             
-            <td>DRBG Compliance</td>
-            <td>Signatures use a non-compliant DRBG and may be susceptible to "dirty signature" vulnerabilities</td>
-            <td>The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG OR The 'k' values are created deterministically according to RFC 6979
+            <td>一台设备上没有使用两个秘钥</td>
+            <td>一台设备上使用的单个资产的多个密钥</td>
+            <td>任一设备上都没有两个属于同一个钱包的密钥</td>
+            <td>任一设备上都没有两个属于同一个钱包的密钥</td>
+            <td>任一设备上都没有两个属于同一个钱包的密钥</td>
+            </tr>
+            
+          
+            
+              <tr>
+            
+            <td>符合伪随机数生产器</td>
+            <td>签名使用不符合要求的DRBG，并且可能容易受到 "脏签名" 漏洞的影响</td>
+            <td>使用符合NIST SP 800-90A 的DRBG创建数字签名中的 " k " 值，或者根据RFC 6979 确定性地创建" k " 值
 </td>
-            <td>The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG OR The 'k' values are created deterministically according to RFC 6979
+            <td>使用符合NIST SP 800-90A 的DRBG创建数字签名中的 " k " 值，或者根据RFC 6979 确定性地创建" k " 值
 </td>
-            <td>The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG OR The 'k' values are created deterministically according to RFC 6979
-</td>
-            </tr>
-            
-          
-
-        </tr>
-      
-        
-        <tr>
-          
-
-          
-
-          <td rowspan=2>Key Compromise Protocol (KCP)</td>
-
-          
-            
-            <td>KCP Exists</td>
-            <td>No staff has the necessary knowledge/experience/training required to rebuild the keys/wallets when necessary</td>
-            <td>An employee with knowledge/experience with the system is able to direct staff with appropriate tasks to remove the risk of compromise.</td>
-            <td>A written checklist/procedure document exists that outlines procedures for each actor to carry out in order to remove the risk of compromise. Document is maintained as warranted by changes to the system.</td>
-            <td>A written checklist/procedure document exists that outlines procedures for each actor to carry out in order to remove the risk of compromise. Document is maintained as warranted by changes to the system.</td>
-            </tr>
-            
-          
-            
-              <tr>
-            
-            <td>KCP Training + Rehearsals</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Regular training is provided to keyholders to ensure they are prepared to invoke the protocol when required.</td>
-            </tr>
-            
-          
-
-        </tr>
-      
-        
-        <tr>
-          
-
-          
-
-          <td rowspan=3>Keyholder Grant/Revoke Policies & Procedures</td>
-
-          
-            
-            <td>Grant/Revoke Procedures/Checklist</td>
-            <td>No Policy/Procedures in place</td>
-            <td>Permission changes for incoming/outgoing staff are performed by someone knowledgeable with the system</td>
-            <td>A written checklist/procedure document exists that is followed for on/offboarding. The checklist outlines every permission to grant/revoke for every role in the information system.</td>
-            <td>A written checklist/procedure document exists that is followed for on/offboarding. The checklist outlines every permission to grant/revoke for every role in the information system.</td>
-            </tr>
-            
-          
-            
-              <tr>
-            
-            <td>Requests made via Authenticated Communication Channel</td>
-            <td></td>
-            <td></td>
-            <td>All grant/revoke requests are made via an Authenticated Communication Channel</td>
-            <td>All grant/revoke requests are made via an Authenticated Communication Channel</td>
-            </tr>
-            
-          
-            
-              <tr>
-            
-            <td>Grant/Revoke Audit Trail</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>An audit trail records every change of access including who performed the change</td>
-            </tr>
-            
-          
-
-        </tr>
-      
-        
-        <tr>
-          
-
-          
-            
-            
-
-            <td rowspan=6>Operations</li>
-
-          
-
-          <td rowspan=1>Security Audits / Pentests</td>
-
-          
-            
-            <td>Security Audit</td>
-            <td>No proof of security</td>
-            <td>A developer who is knowledgeable about bitcoin security has assisted in the design and development of the system</td>
-            <td>A security audit has been completed by another entity who did not assist in the development of the system</td>
-            <td>External security audits are conducted regularly (at least 1/yr)</td>
-            </tr>
-            
-          
-
-        </tr>
-      
-        
-        <tr>
-          
-
-          
-
-          <td rowspan=2>Data Sanitization Policy (DSP)</td>
-
-          
-            
-            <td>DSP Exists</td>
-            <td>No sanitization is performed on decommissioned media</td>
-            <td>Staff is aware of how data remains on digital media after deletion, how to securely wipe data, and when secure wiping should be used</td>
-            <td>Destruction guidelines exist to educate/remind staff about securely deleting data data, and where they should do this within their workflow</td>
-            <td>Detailed policy covering sanitization requirements, procedures, and validation steps for every media type used by business</td>
-            </tr>
-            
-          
-            
-              <tr>
-            
-            <td>Audit Trail of all media sanitization</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Audit trails are maintained for every piece of sanitized media</td>
-            </tr>
-            
-          
-
-        </tr>
-      
-        
-        <tr>
-          
-
-          
-
-          <td rowspan=1>Proof of Reserve (PoR)</td>
-
-          
-            
-            <td>Proof of Reserve Audits</td>
-            <td>No audit has been performed</td>
-            <td>A PoR audit has been completed</td>
-            <td>Regularly-scheduled release of PoR audits</td>
-            <td>The system does not hold any funds at all
-OR
-The ledger is openly viewable by all, so no PoR audits are necessary
+            <td>使用符合NIST SP 800-90A 的DRBG创建数字签名中的 " k " 值，或者根据RFC 6979 确定性地创建" k " 值
 </td>
             </tr>
             
@@ -596,26 +437,184 @@ The ledger is openly viewable by all, so no PoR audits are necessary
 
           
 
-          <td rowspan=2>Audit Logs</td>
+          <td rowspan=2>秘钥协商机制(KCP)</td>
 
           
             
-            <td>Application Audit Logs</td>
-            <td>No audit logs</td>
-            <td>Audit logs exist for some actions within the system</td>
-            <td>Full audit trail exists of all user/admin actions</td>
-            <td>Full audit trail exists of all user/admin actions</td>
+            <td>存在秘钥协商机制(KCP)</td>
+            <td>没有工作人员具有必要时重建秘钥/钱包所需的必要知识/经验/培训</td>
+            <td>具有系统知识/经验的员工能够指导执行适当任务的员工，以消除妥协的风险。</td>
+            <td>存在一份书面清单/程序文件，其中概述了每个行为者执行的程序，以消除妥协的风险。 根据系统更改的保证对文档进行维护。</td>
+            <td>存在一份书面清单/程序文件，其中概述了每个行为者执行的程序，以消除妥协的风险。 根据系统更改的保证对文档进行维护。</td>
             </tr>
             
           
             
               <tr>
             
-            <td>Backup of Audit Logs</td>
+            <td>KCP培训与演练</td>
             <td></td>
             <td></td>
             <td></td>
-            <td>Backups of audit data are performed regularly</td>
+            <td>定期为关键人物提供培训，以确保他们准备在需要时调用协议。</td>
+            </tr>
+            
+          
+
+        </tr>
+      
+        
+        <tr>
+          
+
+          
+
+          <td rowspan=3>密钥持有人授权/撤销政策和程序</td>
+
+          
+            
+            <td>授予/撤销程序/清单</td>
+            <td>没有政策/程序</td>
+            <td>入职/离职人员的权限更改是由熟悉系统的人员执行的</td>
+            <td>存在一份书面检查表/程序文档，随后可以进行上/下机操作。 该清单列出了信息系统中每个角色的授予/撤消权限。</td>
+            <td>存在一份书面检查表/程序文档，随后可以进行上/下机操作。 该清单列出了信息系统中每个角色的授予/撤消权限。</td>
+            </tr>
+            
+          
+            
+              <tr>
+            
+            <td>通过身份验证通信信道发出的请求</td>
+            <td></td>
+            <td></td>
+            <td>所有授予/撤消请求均通过经过身份验证的通信通道进行</td>
+            <td>所有授予/撤消请求均通过经过身份验证的通信通道进行</td>
+            </tr>
+            
+          
+            
+              <tr>
+            
+            <td>授予/撤消审核跟踪</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>审核跟踪记录访问权限的每个更改，包括执行更改的人员</td>
+            </tr>
+            
+          
+
+        </tr>
+      
+        
+        <tr>
+          
+
+          
+            
+            
+
+            <td rowspan=6>运营操作</li>
+
+          
+
+          <td rowspan=1>安全审计/渗透测试</td>
+
+          
+            
+            <td>安全审计</td>
+            <td>没有安全证明</td>
+            <td>一位了解比特币安全性的开发人员协助了系统的设计和开发</td>
+            <td>另一个没有协助开发系统的实体已经完成了安全审核</td>
+            <td>定期进行外部安全审核（至少一年一次）</td>
+            </tr>
+            
+          
+
+        </tr>
+      
+        
+        <tr>
+          
+
+          
+
+          <td rowspan=2>数据清理策略(DSP)</td>
+
+          
+            
+            <td>存在数据清理策略</td>
+            <td>没有在废弃的介质上实施数据清理方法</td>
+            <td>工作人员了解删除后数据如何保留在数字媒体上，如何安全擦除数据以及何时应使用安全擦除</td>
+            <td>存在销毁指南，以教育/提醒员工安全删除数据数据，以及他们应在工作流程中的何处进行删除</td>
+            <td>详细的政策，涵盖企业使用的每种媒体类型的消毒要求，程序和验证步骤</td>
+            </tr>
+            
+          
+            
+              <tr>
+            
+            <td>所有介质清理审计追溯</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>每个经过清理的介质均保留审计跟踪</td>
+            </tr>
+            
+          
+
+        </tr>
+      
+        
+        <tr>
+          
+
+          
+
+          <td rowspan=1>储备证明(PoR)</td>
+
+          
+            
+            <td>储备证明审计</td>
+            <td>没有执行审计</td>
+            <td>已完成PoR审核</td>
+            <td>定期发布PoR审核</td>
+            <td>系统根本没有任何资金
+或者
+所有人都可以公开查看分类帐，因此无需进行PoR审核
+</td>
+            </tr>
+            
+          
+
+        </tr>
+      
+        
+        <tr>
+          
+
+          
+
+          <td rowspan=2></td>
+审计日志
+          
+            
+            <td>应用审计日志</td>
+            <td>没有审计日志</td>
+            <td>对系统的部分操作进行审核日志记录</td>
+            <td>对所有用户及管理员操作进行完整审核跟踪</td>
+            <td>对所有用户及管理员操作进行完整审核跟踪</td>
+            </tr>
+            
+          
+            
+              <tr>
+            
+            <td>审计日志备份</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>定期备份审计数据</td>
             </tr>
             
           
