@@ -85,12 +85,12 @@
     <div class="page-content">
       <div class="wrapper">
         <div class="home">
-  <h1 class="page-heading">Definitions</h1>
+  <h1 class="page-heading">定义</h1>
   <ul class="post-list">
   
     
     <li>
-      <h3 id="hd-wallet"> Hierarchical Deterministic Wallet
+      <h3 id="hd-wallet"> 分层确定性钱包
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/HDWallet.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/HDWallet.yml">History</a>
@@ -98,13 +98,15 @@
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A <a href="#wallet">wallet</a> that uses a cryptographically secure key derivation function (e.g. <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a>) to create an arbirtarily large number of unique <a href="#address">addresses</a> from a single master <a href="#seed">seed</a>. These are beneficial as only the master seed needs to be backed up to protect against loss. Some HD wallet software can also support <a href="#multisig">multi-signature</a> configurations where multiple master seeds are combined when creating addresses. HD Wallets generally organize addresses into an n-ary tree structure, where each address is associated with a path through the tree. The first HD wallet standard adopted by many applications in the bitcoin community was <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki">BIP32</a> as proposed by Pieter Wuille. <a href="https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki">BIP44</a> introduced additional functionality allowing sub-paths to be shared without compromising the security of the entire wallet.</p>
+      <p>
+	  <p>一个使用加密安全的密钥派生函数（如PBKDF2）的钱包可以从一个主种子中任意创建大量的唯一地址。这些都是有益的，因为只有主种子需要备份，以防止损失。一些高清钱包软件还可以支持多签名配置，其中多个主种子在创建地址时组合在一起。HD钱包通常将地址组织成n元树结构，其中每个地址都与通过树的路径相关联。比特币社区的许多应用程序采用的第一个高清钱包标准是Pieter Wuille提出的BIP32。BIP44引入了额外的功能，允许共享子路径，而不会影响整个钱包的安全性。
+	  </p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="key-compromise-protocol"> Key Compromise Protocol
+      <h3 id="key-compromise-protocol"> 密钥泄露协议
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/KeyCompromiseProtocol.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/KeyCompromiseProtocol.yml">History</a>
@@ -112,13 +114,13 @@
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A document that outlines the specific actions that are to be taken by every actor in an Information System in order to regenerate the system’s set of keys in the event that a key may have been compromised.</p>
+      <p><p>一种文件，概述信息系统中每个参与者要采取的具体行动，以便在密钥可能受到损坏时重新生成系统的一组密钥。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="seed"> Seed
+      <h3 id="seed"> 种子
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/Seed.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/Seed.yml">History</a>
@@ -126,13 +128,13 @@
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A slice of <a href="#entropy">entropy</a> typically used to initialize a <a href="#prng">PRNG</a>/<a href="#drbg">DRBG</a> or other crypto-system (e.g. <a href="#hd-wallet">HD Wallets</a>, <a href="https://tools.ietf.org/html/rfc6979">deterministic signatures</a>).</p>
+      <p><p>通常用于初始化PRNG/DRBG或其他密码系统（例如高清钱包、确定性签名）的一片熵</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="wallet"> Wallet
+      <h3 id="wallet"> 钱包
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/Wallet.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/Wallet.yml">History</a>
@@ -140,20 +142,19 @@
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>In the context of most cryptocurrencies, a wallet is a public-private keypair, where some encoding of the public key (an <a href="#address">address</a>) can be used in transaction outputs to transfer funds. The private key can then be used to generate a valid signature for a transaction spending those funds. In practice, however, ‘wallet’ usually refers to an application that manages a large number of these keypairs, allowing a new address to be used for each transactions. Wallet applications generally fall into one of two categories:</p>
+      <p><p>在大多数加密货币的上下文中，钱包是一个公私密钥对，其中公钥（地址）的某些编码可用于交易输出以转移资金。然后可以使用私钥为花费这些资金的交易生成有效的签名。然而，在实践中，“钱包”通常指的是一个管理大量这些密钥对的应用程序，允许在每次交易中使用一个新地址。钱包应用程序通常分为两类：</p>
 <ul>
-  <li>JBOK (Just a Bunch of Keys) Wallets where the wallet uses a <a href="#prng">PRNG</a> to generate each keypair and stores them for use.</li>
-  <li><a href="#hd-wallet">HD (Hierarchical Deterministic) Wallets</a> which derives an arbitrary number of keypairs from one random <a href="#seed">seed</a>.</li>
+  <li>JBOK（只是一堆钥匙）钱包，钱包使用PRNG生成每个钥匙对并存储它们以供使用。</li>
+  <li>从一个随机种子中获得任意数量的密钥对的HD（层次确定性）钱包。</li>
 </ul>
 
-<p>Wallet software can introduce additional complexity, for example by combining multiple keypairs into single addresses, as in the case of a <a href="#multisig">multi-signature</a> wallet.
-For the purposes of this document, the term ‘wallet’ refers to some <em>collection</em> of cryptocurrency <a href="#address">addresses</a>.</p>
+<p>钱包软件可以引入额外的复杂性，例如通过将多个密钥对组合成单个地址，如多签名钱包的情况。就本文件而言，“钱包”一词是指加密货币地址的一些集合。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="prng"> Pseudo-Random Number Generator
+      <h3 id="prng"> 伪随机数发生器
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/PRNG.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/PRNG.yml">History</a>
@@ -161,13 +162,13 @@ For the purposes of this document, the term ‘wallet’ refers to some <em>coll
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>An algorithm, program, or system used to produce arbitrary difficult-to-guess values for cryptographic applications. Typically <a href="#seed">seeded</a> with some source of <a href="#entropy">entropy</a>, PRNGs are used, among other things, to generate <a href="#key">cryptographic keys</a>. Sometimes CSPRNG (Cryptographically Secure PRNG). See related: <a href="#drbg">DRBG (Deterministic Random Bit Generator)</a>. <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">Wikipedia</a></p>
+      <p><p>一种算法、程序或系统，用于为密码应用程序产生任意难以猜测的值。prng通常带有某种熵源，用于生成加密密钥。有时CSPRNG（加密安全PRNG）。参见相关内容：DRBG（确定性随机位发生器）。维基百科</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="signature"> Digital Signature
+      <h3 id="signature"> 数字签名
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/Signature.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/Signature.yml">History</a>
@@ -175,13 +176,13 @@ For the purposes of this document, the term ‘wallet’ refers to some <em>coll
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>(stub) <a href="https://en.wikipedia.org/wiki/Digital_signature">Wikipedia</a></p>
+      <p><p>（存根） <a href="https://en.wikipedia.org/wiki/Digital_signature">Wikipedia</a></p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="otp"> One-Time Password
+      <h3 id="otp"> 一次性密码
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/OTP.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/OTP.yml">History</a>
@@ -189,17 +190,17 @@ For the purposes of this document, the term ‘wallet’ refers to some <em>coll
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A one-time password is any token (often used as a <a href="#authentication-factor">factor of authentication</a>) that is valid for one and only one use. OTP tokens are generally as secure as the weakest of:</p>
+      <p><p>一次性密码是任何令牌（通常用作身份验证的一个因素），它只对一次使用有效。OTP令牌通常与以下最弱的令牌一样安全：</p>
 <ol>
-  <li>The channel used to deliver the OTP to the intended user, if any.</li>
-  <li>The system where the OTP is generated and stored until “redeemed.”</li>
+  <li>用于将OTP传送给预期用户（如果有）的信道。</li>
+  <li>生成和存储OTP直到“兑换”的系统</li>
 </ol>
 </p>
     </li>
   
     
     <li>
-      <h3 id="address"> Address
+      <h3 id="address"> 地址
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/Address.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/Address.yml">History</a>
@@ -207,13 +208,13 @@ For the purposes of this document, the term ‘wallet’ refers to some <em>coll
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A cryptocurrency address is (usually) an encoded form of a public key from a <a href="#wallet">wallet</a> that can be used as the recipient of a transaction. In <a href="#multisig">multi-signature</a> schemes, an address may be an encoding of information including several public keys and/or other information as in the case of a bitcoin <a href="https://en.bitcoin.it/wiki/Pay_to_script_hash">P2SH</a> address.</p>
+      <p><p>加密货币地址（通常）是钱包中公钥的编码形式，可以用作交易的接收者。在多重签名方案中，地址可以是包括若干公钥和/或其他信息的信息编码，如比特币P2SH地址的情况。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="authenticated-communication-channel"> Authenticated Communication Channel
+      <h3 id="authenticated-communication-channel"> 认证通信信道
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/AuthenticatedCommunicationChannel.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/AuthenticatedCommunicationChannel.yml">History</a>
@@ -221,13 +222,13 @@ For the purposes of this document, the term ‘wallet’ refers to some <em>coll
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A communication channel that provides high confidence of the identities of the communicating parties. This could be a voice call where the sound of their known voice is verified, a digitally-signed message (using strong encryption such as PGP/GPG or S/MIME), or a combination of multiple separate channels that are unlikely to be simultaneously compromised, such as an email + an SMS message + an instant message via Slack.</p>
+      <p><p>一种对通信方身份高度信任的沟通渠道。这可能是一种语音呼叫，其中验证了其已知语音的声音、数字签名消息（使用诸如PGP/GPG或S/MIME等强加密）或多个不可能同时受到损害的单独通道的组合，例如电子邮件+短信+通过松弛发送即时消息。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="drbg"> Deterministic Random Bit Generator
+      <h3 id="drbg"> 确定性随机位发生器
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/DRBG.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/DRBG.yml">History</a>
@@ -235,13 +236,13 @@ For the purposes of this document, the term ‘wallet’ refers to some <em>coll
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A kind of <a href="#prng">PRNG</a> that can produce some number of values (usually <a href="#keys">keys</a>) from a single <a href="#seed">seed</a>. DRBGs are primarily useful due to their ability to limit a system’s reliance secure sources of <a href="#entropy">entropy</a></p>
+      <p><p>一种PRNG，它可以从一个种子中产生一些值（通常是键）。DRGBs主要有用是因为它们能够限制系统对安全熵源的依赖</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="key"> Key
+      <h3 id="key"> 密钥
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/Key.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/Key.yml">History</a>
@@ -249,13 +250,13 @@ For the purposes of this document, the term ‘wallet’ refers to some <em>coll
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>(stub) A cryptographic key is an input to a cryptographic function. <a href="https://en.wikipedia.org/wiki/Key_%28cryptography%29">Wikipedia</a> In <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">public-key cryptography</a> a public key is used to encrypt data that can only be decrypted using a corresponding private key. Similarly, the private key can be used to generate irreproducible <a href="#signature">signatures</a> for arbitrary data which the public key can verify. In cryptocurrency, a private key may often include additional application-specific information such as bitcoin’s <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#user-content-extended-keys">chain code</a>. In such cases, the term <code class="language-plaintext highlighter-rouge">key</code> can apply to extended key information OR partial information which might be used to reconstruct a full key as both are sensitive, private information.</p>
+      <p><p>（存根）加密密钥是加密函数的输入。维基百科在公钥密码学中，公钥用于加密只能使用相应私钥解密的数据。类似地，私钥可用于为公钥可验证的任意数据生成不可复制的签名。在加密货币中，私钥通常可以包括附加的特定于应用程序的信息，例如比特币的链码。在这种情况下，术语密钥可应用于扩展密钥信息或可用于重构完整密钥的部分信息，因为两者都是敏感的私有信息。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="trusted-environment"> Trusted Environment
+      <h3 id="trusted-environment"> 可信环境
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/TrustedEnvironment.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/TrustedEnvironment.yml">History</a>
@@ -263,22 +264,24 @@ For the purposes of this document, the term ‘wallet’ refers to some <em>coll
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>For the purposes of this specification, trusted environments include:</p>
+      <p><p>就本规范而言，受信任的环境包括： </p>
 <ul>
-  <li>machines owned by the organization with appropriate antivirus/anti-malware software installed</li>
-  <li>machines owned by a keyholder</li>
-  <li>other machines upon which the organization permits the use of <a href="#keys">keys</a>/<a href="#seeds">seeds</a>.</li>
+  <li>安装了适当的防病毒/反恶意软件的组织拥有的计算机</li>
+  <li>密钥持有者拥有的机器</li>
+  <li>组织允许使用钥匙/种子的其他机器。</li>
 </ul>
 
-<p>An organization’s trusted environment policy should require hard disk encryption, short screen-lock timeouts, sufficiently <a href="#entropy">entropic</a> account passwords, and other sensible security measures.<br />
-Additionally, trusted environments should, where possible, make use of physical access control to prevent “shoulder surfing” of keyboard and screen by unauthorized individuals.<br />
-Public machines such as those in Internet cafes, libraries, and other public spaces are <em>not</em> trusted environments.</p>
+<p>组织的可信环境策略应要求硬盘加密、短屏幕锁定超时、充分熵的帐户密码以及其他合理的安全措施。
+
+此外，在可能的情况下，可信环境应使用物理访问控制，以防止未经授权的个人对键盘和屏幕进行“肩窥”。
+
+诸如网吧、图书馆和其他公共空间中的公共机器是不可信的环境。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="strong-encryption"> Strong Encryption
+      <h3 id="strong-encryption"> 强加密
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/StrongEncryption.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/StrongEncryption.yml">History</a>
@@ -286,13 +289,13 @@ Public machines such as those in Internet cafes, libraries, and other public spa
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A system for <a href="https://en.wikipedia.org/wiki/Encryption">encrypting</a> data using an industry-standard encryption or key derivation algorithm with an encryption key or password <em>such that</em> modern cryptanalysis techniques would require the estimated global combined computing power and 1,000x more time than the expected life of the key or seed to decrypt the encrypted data. An example of an encryption algorithm that would provide the necessary level of security at the time of this writing (and potentially for the next few decades barring the discovery of a new attack vector) is AES-256. An example of a password-based key derivation function is <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a> as described <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP 39</a>. <a href="https://en.wikipedia.org/wiki/Strong_cryptography">Wikipedia</a></p>
+      <p><p>一种使用工业标准的加密或密钥导出算法对数据进行加密的系统，该算法具有加密密钥或密码，使得现代密码分析技术需要估计的全局综合计算能力和比密钥或种子的预期寿命多1000倍的时间来解密加密数据。一个加密算法的例子是在ESI 256中，在写入时（在未来几十年内，除非发现新的攻击向量），将提供必要的安全级别。如BIP 39所述，基于口令的密钥导出函数的示例是PBKDF2。维基百科</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="identity-verification"> Identity Verification
+      <h3 id="identity-verification"> 身份验证
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/Identity Verification.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/Identity Verification.yml">History</a>
@@ -300,29 +303,29 @@ Public machines such as those in Internet cafes, libraries, and other public spa
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>Identity verification is a tiered process by which an organization or system attempts to confirm the authenticity of an <a href="#actor">actors’</a> claim to be a given individual or organization.</p>
+      <p><p>身份验证是一个分层的过程，通过该过程，组织或系统试图确认参与者声称是给定个人或组织的真实性。</p>
 
-<p>Typical methods of identity verification for individuals include:</p>
+<p>个人身份验证的典型方法包括：</p>
 <ul>
-  <li>one or more forms of government-issued identification (driver’s license, passport, etc.)</li>
-  <li>one or more proofs of residency at the individual’s home (utility bills, bank statements, etc.)</li>
-  <li>successful completion of challenge questions through a reputable identity-verification service operating in the individual’s country of residence (e.g. Equifax)</li>
+  <li>一种或多种政府签发的身份证明（驾驶执照、护照等）</li>
+  <li>个人住宅的一份或多份证明（公用事业账单、银行对账单等）</li>
+  <li>通过在个人居住国（例如Equifax）内运作的信誉良好的身份验证服务成功完成挑战问题</li>
 </ul>
 
-<p>In cases of an organization, the supporting records can include:</p>
+<p>对于组织，支持记录可以包括：</p>
 <ul>
-  <li>Employer Identification Number (“EIN”), Business Number, or similar identifier based on jurisdiction</li>
-  <li>D-U-N-S Number</li>
-  <li>Articles of Incorporation</li>
+  <li>雇主识别号（“EIN”）、企业编号或基于管辖权的类似标识符</li>
+  <li>邓白氏编码</li>
+  <li>公司章程</li>
 </ul>
 
-<p>In either case, enough supporting documentation should be provided and verified to support the actor’s identity claim.</p>
+<p>在任何一种情况下，都应提供并核实足够的证明文件，以支持行为人的身份要求。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="authentication-factor"> Factor of Authentication
+      <h3 id="authentication-factor"> 认证因素
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/AuthenticationFactor.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/AuthenticationFactor.yml">History</a>
@@ -330,20 +333,20 @@ Public machines such as those in Internet cafes, libraries, and other public spa
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p><a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">Multi-factor authentication</a> schemes require multiple demonstrations of identity. The most common example is a username and password combination, where each input is a factor of authentication. To access protected information in this scheme, an <a href="#actor">actor</a> must provide those two pieces of information. Additional factors generally (although with diminishing returns) increase the security of the system. Common examples include:</p>
+      <p><p>多因素身份验证方案需要多次身份验证。最常见的例子是用户名和密码的组合，其中每个输入都是身份验证的一个因素。要访问此方案中受保护的信息，参与者必须提供这两条信息。附加因素通常（尽管回报递减）会增加系统的安全性。常见的例子包括：</p>
 <ul>
-  <li>A <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm">TOTP</a> token may be required, where the token can only be obtained from a device seeded with the TOTP secret (Google Authenticator), which effectively requires the actor be in possession of a specific pre-authorized device.</li>
-  <li>An <a href="#otp">OTP</a> can be delivered to a phone number via SMS, MMS, or a voice call.</li>
-  <li>A biometric scan may be required - although this is usually only useful if the access point is in a controlled and trusted environment.</li>
+  <li>可能需要TOTP令牌，其中令牌只能从播有TOTP秘密的设备（Google验证器）获得，这实际上要求参与者拥有特定的预授权设备。</li>
+  <li>OTP可以通过短信息、彩信或语音通话发送到电话号码。</li>
+  <li>可能需要进行生物特征扫描——尽管这通常仅在接入点处于受控和可信环境中时才有用。</li>
 </ul>
 
-<p>Colloquially, a username is not considered a factor of authentication since usernames are not commonly secret information. The same applies to email addresses, phone numbers, and other pieces of data which only “identify” actors. The requirement imposed by a factor of authentication should only be satisfiable by the actor identified.</p>
+<p>通俗地说，用户名不被认为是身份验证的因素，因为用户名通常不是秘密信息。这同样适用于电子邮件地址、电话号码和其他只“识别”参与者的数据。认证因素施加的要求只能由所确定的行为人来满足。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="entropy"> Entropy
+      <h3 id="entropy"> 熵
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/Entropy.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/Entropy.yml">History</a>
@@ -351,13 +354,13 @@ Public machines such as those in Internet cafes, libraries, and other public spa
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>Randomness usually collected from hardware, environmental factors (time of execution), or external sources (user-input). <a href="https://en.wikipedia.org/wiki/Entropy_%28computing%29">Wikipedia</a></p>
+      <p><p>随机性通常从硬件、环境因素（执行时间）或外部来源（用户输入）收集。维基百科</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="actor"> Actor
+      <h3 id="actor"> 参与者
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/Actor.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/Actor.yml">History</a>
@@ -365,13 +368,13 @@ Public machines such as those in Internet cafes, libraries, and other public spa
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A person, organization, system, or service that (for the purposes of this specification) makes direct use of a cryptographic <a href="#key">key</a> or <a href="#seed">seed</a> is an actor in the context of that key or seed.</p>
+      <p><p>（就本规范而言）直接使用加密密钥或种子的个人、组织、系统或服务是该密钥或种子上下文中的参与者。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="multisig"> Multi-signature
+      <h3 id="multisig"> 多重签名
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/Multisig.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/Multisig.yml">History</a>
@@ -379,13 +382,13 @@ Public machines such as those in Internet cafes, libraries, and other public spa
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A common security feature of cryptocurrency <a href="#wallet">wallet</a> applications is to require multiple signatures from different <a href="#key">keys</a> to create a valid transaction.</p>
+      <p><p>加密货币钱包应用程序的一个常见安全特性是需要来自不同密钥的多个签名来创建有效的交易。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="proof-of-reserve"> Proof of Reserve
+      <h3 id="proof-of-reserve"> 保留证明
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/ProofOfReserve.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/ProofOfReserve.yml">History</a>
@@ -393,7 +396,7 @@ Public machines such as those in Internet cafes, libraries, and other public spa
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>A demonstration that an organization has access to all funds to which it claims ownership is called a Proof-of-Reserve. Cryptocurrencies based on a public ledger (blockchain) enable proofs of reserve to be conducted and publicly verified, although the term can also be applied to private audits intended to assure some audience that an organization is operating in good faith and not as a <a href="https://en.wikipedia.org/wiki/Fractional-reserve_banking">fractional reserve</a></p>
+      <p><p>证明一个组织有权使用其声称拥有的所有资金的证明称为储备证明。基于公共分类账（区块链）的加密货币能够进行和公开验证准备金证明，尽管该术语也可以应用于私人审计，目的是向某些受众保证组织是善意运作的，而不是作为部分准备金</p>
 </p>
     </li>
   
