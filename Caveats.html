@@ -85,12 +85,12 @@
     <div class="page-content">
       <div class="wrapper">
         <div class="home">
-  <h1 class="page-heading">Caveats</h1>
+  <h1 class="page-heading">注意事项</h1>
   <ul class="post-list">
   
     
     <li>
-      <h3 id="dust"> Dust Transactions
+      <h3 id="dust"> 灰尘交易
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/caveats/.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/caveats/.yml">History</a>
@@ -98,13 +98,13 @@
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>It has become common for some users of a blockchain-based system to send very low quantities of blockchain tokens (often called “dust”) to addresses for a variety of reasons. Depending on how your information system is designed, large quantities of these very small transactions could cause a Denial of Service attack if your system performs significant amounts of processing on all incoming transactions. Alternatively, accounting inconsistencies can result from ignoring these small transactions. Those who design or implement blockchain-based systems should keep these two competing tradeoffs in mind when deciding how the system should carry out the business rules it was designed to perform.</p>
+      <p><p>基于区块链的系统的一些用户出于各种原因向地址发送数量非常少的区块链令牌（通常称为“灰尘”）已变得很常见。根据您的信息系统的设计方式，如果您的系统对所有传入的事务执行大量的处理，大量这些非常小的事务可能会导致拒绝服务攻击。或者，会计不一致可能是由于忽略这些小交易造成的。那些设计或实施基于区块链的系统的人在决定系统应该如何执行其设计执行的业务规则时，应该牢记这两个相互竞争的权衡。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="fork"> Blockchain Forks
+      <h3 id="fork"> 区块链叉
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/caveats/.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/caveats/.yml">History</a>
@@ -112,13 +112,13 @@
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>When a blockchain ends up with two persistent tips - with neither being orphaned - the single chain becomes split into two independent blockchains with a shared common history. Forks can occur through intentional changes to consensus rules, or as a result of an accidental divergence of consensus. In either case, there may not be any “replay protection” for transactions intended for one side of the fork. This can cause a transaction to accidentally transfer more funds than intended. All information systems that deal with blockchains should be able to handle forks in a way that is consistent with the business requirements that govern it.</p>
+      <p><p>当一个区块链最终有两个持久性的提示（两个提示都不是孤立的）时，单个的区块链就会分裂成两个具有共同历史的独立区块链。分歧可以通过对共识规则的有意改变而发生，也可以由于共识的偶然分歧而发生。在这两种情况下，可能没有任何“重放保护”的交易打算为一方的分叉。这会导致交易意外地转移超过预期的资金。所有处理区块链的信息系统都应该能够以一种与管理它的业务需求一致的方式来处理fork。</p>
 </p>
     </li>
   
     
     <li>
-      <h3 id="reorgs"> Blockchain Reorgs
+      <h3 id="reorgs"> 区块链重组
         <div class="contribution-links">
           <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/caveats/.yml">Edit</a>
           | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/caveats/.yml">History</a>
@@ -126,7 +126,7 @@
           | <a href="#top">Top</a>
         </div>
       </h3>
-      <p><p>When multiple blocks are found at approximately the same time, it is possible for the blockchain to have multiple tips/heads. Since this is not common with flat files and databases, most programmers that are new to blockchains will write applications that only look at one tip/head of the blockchain and ignore the others. It is possible for these applications to become “confused” when the tip of a blockchain is “orphaned” or removed during a reorganization (“Reorg”) of the blockchain. This can cause transactions that were previously confirmed to become unconfirmed which can lead to unexpected behaviour unless your information system has been built to explicitly handle blockchain reorgs. This behaviour can lead to a loss of funds if not handled appropriately. All information systems that deal with blockchains should be able to handle reorgs in a way that is consistent with the business requirements that govern it.</p>
+      <p><p>当几乎同时发现多个区块时，区块链可能有多个尖端/头部。由于这在平面文件和数据库中并不常见，因此大多数刚接触区块链的程序员编写的应用程序只会查看区块链的一个提示/头部，而忽略其他提示/头部。当区块链的顶端“孤立”或在区块链重组（“Reorg”）期间移除时，这些应用程序可能会变得“混乱”。这可能会导致先前确认的交易变成未确认的交易，这可能导致意外行为，除非您的信息系统已构建为显式处理区块链重组。如果处理不当，这种行为可能导致资金损失。所有处理区块链的信息系统都应该能够以一种与管理它的业务需求一致的方式处理reorgs。</p>
 </p>
     </li>
   
