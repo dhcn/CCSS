@@ -1,5 +1,5 @@
->This translation project was organized by me,this fork is just for bakcup
->thanks for all commiters again
+> This translation project was organized by me,this fork is just for bakcup
+> thanks for all commiters again
 
 # [The CryptoCurrency Security Standard](https://cryptoconsortium.github.io/CCSS/)
 
