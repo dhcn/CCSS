@@ -1,3 +1,6 @@
+>This translation project was organized by me,this fork is just for bakcup
+>thanks for all commiters again
+
 # [The CryptoCurrency Security Standard](https://cryptoconsortium.github.io/CCSS/)
 
 CryptoCurrency Security Standard (CCSS) is a set of requirements for all information systems that make use of cryptocurrencies. By standardizing the techniques and methodologies used by systems around the globe, end-users will be able to easily make educated decisions about which products and services to use and with which companies they wish to align.
